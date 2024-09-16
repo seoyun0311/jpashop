@@ -10,9 +10,11 @@ import lombok.Setter;
 import static jakarta.persistence.FetchType.LAZY;
 
 @Entity
+@Table(name = "order_item")
 @Getter @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class OrderItem {
+
     @Id @GeneratedValue
     @Column(name = "order_item_id")
     private Long id;
